@@ -9,6 +9,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/table.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title>Document</title>
 </head>
 
@@ -16,14 +17,15 @@
   <header>
     <nav>
       <a href="index.html">Home</a> <span>|</span>
-      <a href="register.html">Register</a>
-      <a href="users.html"></a>
+      <a class="btn-register" href="register.html">Register</a>
+      <!-- <a href="users.html"></a> -->
     </nav>
-    <h1> My Awesome User Registration system USERS</h1>
+
+    <h1 style="text-align: center"> Users registered </h1>
   </header>
 
   <main>
-    <table class="table table-light table-sm">
+    <table class="table table-bordered table-light table-sm table-striped table-hover">
       <thead>
         <th>First Name</th>
         <th>Last Name</th>
@@ -36,9 +38,10 @@
       </thead>
 
       <tbody id="tableUsers">
-        <tr>
+        <!-- <tr>
+          <th>leoo</th>
 
-        </tr>
+        </tr> -->
       </tbody>
     </table>
     <!-- the user can only access to this information if is logged -->

@@ -4,16 +4,32 @@
 }
 
 .hero-image {
-  width: 100%;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
+  /* background: grey; */
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-gap: 3rem;
   align-items: center;
+  padding: 5rem;
+}
+
+.hero-image div p{
+  color: white;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.hero-image div span {
+  display: inline-block;
+  /* background: red; */
+  margin-top: 1rem;
+  line-height: 30px;
 }
 
 body {
-  background-image: linear-gradient( 135deg,#0fb9cc 10%,  #3eb67a 100%);
-  font-family: arial;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 1rem 2rem;
 }
 
@@ -53,4 +69,29 @@ h1 {
 span {
   color: white;
   margin: .5rem;
+}
+
+header nav a:nth-last-child(1) {
+  animation: bntRegister;
+  animation-iteration-count: infinite;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+header nav a:nth-last-child(1):hover {
+color: white;
+}
+
+
+@keyframes bntRegister {
+  from {
+    transform: scale(1.0);
+    background: #000;
+  }
+
+  to {
+    transform: scale(1.1);
+    background: #000;
+  }
 }
